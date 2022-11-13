@@ -43,6 +43,28 @@ color: #2E3D72;
     padding-top: 35px;
     padding-bottom: 180px;
 }
+/* test add water */
+
+.water {
+    height: 412px;
+    width: 511px;
+    background-repeat: no-repeat;
+    background-position: right 154px;
+    padding-top: 35px;
+    padding-bottom: 180px;
+    
+    background: url('../img/water.png');
+    animation: water 0.7s linear infinite
+}
+@keyframes water {
+    0%{
+        background-position: -10% -10%;
+    }
+    100%{
+        background-position: 20% 100%;
+    }
+}
+/* end test add water */
 .header-navigation {
     display: flex; 
     margin-bottom: 14px;
