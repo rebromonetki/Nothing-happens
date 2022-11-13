@@ -126,6 +126,7 @@ margin-left: 133px;
 }
 
 /*main */
+/*frame1*/
 .frame1 {
 background-color: #2E3D72;
 font-style: Pattaya;
@@ -142,11 +143,61 @@ flex-wrap: wrap;
 .galochka {
     width: 86px;
     height: 86px;
-    border-radius: 50%;
-    background: url("../img/galochka.jpg") no-repeat;
+    border-radius: 50%; /*делаем скругление, чтобы картинка попала только в область круга */
+    background: url("../img/galochka.jpg") no-repeat; /*квадратная картинка*/
     border: 2px solid #255700;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.5);
     margin-top: 40px;
 
 }
+/*frame1 - end*/
+/*content*/
 
+.content {
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.71) 25.74%, #303046 88.69%);
+    font-family: 'Marck Script';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    
+    color: #2E3D72;    
+}
+.clock {
+    box-sizing: border-box;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 73px;
+    top: 66px;
+    
+    border: 3px solid #2E3D72;
+    border-radius: 50%; 
+    background: url("../img/clock.png") no-repeat; /*прямоугольная картинка*/
+    
+}
+.hands {
+    box-sizing: border-box;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 15%;
+    top: 242px;
+    
+    border: 3px solid #2E3D72;
+    border-radius: 50%; 
+    background: url("../img/hands.png") no-repeat; /*прямоугольная картинка*/
+ 
+}
+.palmface {
+    box-sizing: border-box;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 30%;
+    top: 418px;
+    
+    border: 3px solid #2E3D72;
+    border-radius: 50%; 
+    background: url("../img/palmface.png") no-repeat; /*прямоугольная картинка*/
+}
