@@ -1,0 +1,122 @@
+/* general */
+
+@font-face {
+    font-family: Pattaya; 
+    src: url("../fonts/Pattaya-Regular.ttf"); 
+}
+@font-face {
+    font-family: MarckScript-Regular; 
+    src: url("../fonts/MarckScript-Regular.ttf"); 
+}
+@font-face {
+    font-family: Inter-VariableFont_slnt,wght; 
+    src: url("../fonts/Inter-VariableFont_slnt,wght.ttf"); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 20px;
+    line-height: 89px;
+    font-family: 'Pattaya';
+    color: #3F2071;
+}
+.wrapper {
+    width: 89.2%;
+    margin: 0 auto;
+}
+/* end general */
+
+.nh-header {
+    background: linear-gradient(270deg, rgba(48, 48, 70, 0.81) 0%, #FFFFFF 76.64%);
+backdrop-filter: blur(25px);
+color: #2E3D72;
+}
+.nh-header .wrapper {
+    background-image: url("../img/top foto.png");
+    background-repeat: no-repeat;
+    background-position: right 154px;
+
+    padding-top: 35px;
+    padding-bottom: 180px;
+}
+.header-navigation {
+    display: flex; 
+    margin-bottom: 14px;
+}
+.logo {
+    width: 266px;
+    height: 105px;
+    margin-right: 254px;
+}
+ul {
+    list-style: none;
+}
+.header-navigation-menu {
+    display: flex;
+    align-items: center;
+}
+.header-navigation a {
+    text-decoration: none;
+    display: block;
+    margin-right: 35px;
+}
+.header-navigation-menu li:last-child>a {
+    margin-right: 0;
+}
+
+.about-us {
+    width: 545px;
+    padding-left: 58px;
+}
+.about-us h1 {
+font-family: 'Pattaya';
+font-style: normal;
+font-weight: 400;
+font-size: 87px;
+line-height: 121px;
+text-align: center;
+color: #2E3D72;
+margin-bottom: 24px;
+
+}
+.about-us h2 {
+    font-family: 'Pattaya';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 89px;
+text-align: center;
+color: #2E3D72;
+margin-bottom: 33px;
+}
+
+.wrapper p {
+    margin-left: 54px;
+    margin-top: 29px;
+    font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+}
+.btn {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    padding: 7px 29px;
+font-family: 'Pattaya';
+font-size: 48px;
+color: #FFFFFF;
+background: #81D742;
+box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.5);
+border-radius: 20px;
+cursor: pointer;
+margin-left: 133px;
+
+}
