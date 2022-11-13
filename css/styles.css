@@ -58,14 +58,19 @@ ul {
 .header-navigation-menu {
     display: flex;
     align-items: center;
+    margin-left: auto;
+    column-gap: 24px;
+    
 }
 .header-navigation a {
     text-decoration: none;
     display: block;
     margin-right: 35px;
+    
 }
 .header-navigation-menu li:last-child>a {
     margin-right: 0;
+    
 }
 
 .about-us {
@@ -99,9 +104,8 @@ margin-bottom: 33px;
     margin-top: 29px;
     font-family: 'Inter';
 font-style: italic;
-font-weight: 400;
 font-size: 20px;
-line-height: 24px;
+
 
 color: #000000;
 }
@@ -120,3 +124,29 @@ cursor: pointer;
 margin-left: 133px;
 
 }
+
+/*main */
+.frame1 {
+background-color: #2E3D72;
+font-style: Pattaya;
+color: #FFFFFF;
+font-size: 48px;
+}
+.without-list {
+    display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+       
+}
+
+.galochka {
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    background: url("../img/galochka.jpg") no-repeat;
+    border: 2px solid #255700;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 40px;
+
+}
+
