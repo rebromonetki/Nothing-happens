@@ -29,7 +29,7 @@ body {
     margin: 0 auto;
 }
 /* end general */
-
+/*header*/
 .nh-header {
     background: linear-gradient(270deg, rgba(48, 48, 70, 0.81) 0%, #FFFFFF 76.64%);
 backdrop-filter: blur(25px);
@@ -41,7 +41,7 @@ color: #2E3D72;
     background-position: right 154px;
 
     padding-top: 35px;
-    padding-bottom: 180px;
+    padding-bottom: auto;
 }
 .header-navigation {
     display: flex; 
@@ -109,6 +109,7 @@ font-size: 20px;
 
 color: #000000;
 }
+
 .btn {
     display: inline-block;
     position: relative;
@@ -122,12 +123,16 @@ box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.5);
 border-radius: 20px;
 cursor: pointer;
 margin-left: 133px;
+text-shadow: -2px -4px 4px rgba(0, 0, 0, 0.25),
+            1px -2px 2px #000000;
 
 }
+/*header end*/
 
-/*main */
+/*main - в нём будет несколько блоков*/
+
 /*frame1*/
-.frame1 {
+.main .frame1 {
 background-color: #2E3D72;
 font-style: Pattaya;
 color: #FFFFFF;
@@ -147,57 +152,92 @@ flex-wrap: wrap;
     background: url("../img/galochka.jpg") no-repeat; /*квадратная картинка*/
     border: 2px solid #255700;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.5);
-    margin-top: 40px;
+    margin: 40px 0;
 
 }
 /*frame1 - end*/
+
+#empty {
+    height: 74px; /*добавляет полосу в 74рх, чтобы блок content шёл сразу после frame1*/
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.71) 25.74%, #303046 88.69%);
+}
+
 /*content*/
 
-.content {
+.content-container {
+    position: relative;
+padding: auto;
+    margin: auto;
     background: linear-gradient(270deg, rgba(255, 255, 255, 0.71) 25.74%, #303046 88.69%);
-    font-family: 'Marck Script';
-    font-style: normal;
-    font-weight: 400;
+    font-family: MarckScript-Regular;
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 60px;
+
+color: #2E3D72;
+
+  }
+  .content-content {
+    padding: 66px 73px; /*двигаем контент вниз и враво, чтобы были отступы и фон*/
+  }
+  .section {
+    width: 100%; 
+    margin: -74px 0 0 0;/*наползание картинок друг на друга
+                          из-за него добавляем пустой див #empty размера 74рх */ 
+  }
+  .section {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row; 
+    text-align: left;
+    gap: 51px; /*расстояние горизонтальное между текстом и картинкой*/
+  }
+  .section p {
+    margin: 74px auto; /*опускаем тексты вниз, чтобы были по центру от картинок по горизонтали*/
+  }
+
+  figure1 {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #000000;
+    border-radius: 50%; 
+    background: url("../img/clock.png") no-repeat;
+
+  }
+
+  figure2 {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #000000;
+    border-radius: 50%; 
+    background: url("../img/hands.png") no-repeat;
+margin-left: 8%;
+  }
+
+  figure3 {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #000000;
+    border-radius: 50%; 
+    background: url("../img/palmface.png") no-repeat;
+margin-left: 16%;
+}
+
+.empty, .wrap, {
+  width: 33.33%
+}
+/*content end*/
+
+.main .frame1 {
+    background-color: #2E3D72;
+    font-style: Pattaya;
+    color: #FFFFFF;
     font-size: 48px;
-    line-height: 60px;
-    
-    color: #2E3D72;    
-}
-.clock {
-    box-sizing: border-box;
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    left: 73px;
-    top: 66px;
-    
-    border: 3px solid #2E3D72;
-    border-radius: 50%; 
-    background: url("../img/clock.png") no-repeat; /*прямоугольная картинка*/
-    
-}
-.hands {
-    box-sizing: border-box;
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    left: 15%;
-    top: 242px;
-    
-    border: 3px solid #2E3D72;
-    border-radius: 50%; 
-    background: url("../img/hands.png") no-repeat; /*прямоугольная картинка*/
- 
-}
-.palmface {
-    box-sizing: border-box;
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    left: 30%;
-    top: 418px;
-    
-    border: 3px solid #2E3D72;
-    border-radius: 50%; 
-    background: url("../img/palmface.png") no-repeat; /*прямоугольная картинка*/
-}
+    }
+    .without-list {
+        display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+           
+    }    
