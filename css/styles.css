@@ -39,7 +39,7 @@ color: #2E3D72;
     background-image: url("../img/top foto.png");
     background-repeat: no-repeat;
     background-position: right 154px;
-
+   
     padding-top: 35px;
     padding-bottom: auto;
 }
@@ -52,7 +52,7 @@ color: #2E3D72;
     height: 105px;
     margin-right: 254px;
 }
-ul {
+.header-navigation ul {
     list-style: none;
 }
 .header-navigation-menu {
@@ -200,7 +200,7 @@ color: #2E3D72;
   figure1 {
     width: 250px;
     height: 250px;
-    border: 1px solid #000000;
+    border: 3px solid #2E3D72;
     border-radius: 50%; 
     background: url("../img/clock.png") no-repeat;
 
@@ -209,7 +209,7 @@ color: #2E3D72;
   figure2 {
     width: 250px;
     height: 250px;
-    border: 1px solid #000000;
+    border: 3px solid #2E3D72;
     border-radius: 50%; 
     background: url("../img/hands.png") no-repeat;
 margin-left: 8%;
@@ -218,7 +218,7 @@ margin-left: 8%;
   figure3 {
     width: 250px;
     height: 250px;
-    border: 1px solid #000000;
+    border: 3px solid #2E3D72;
     border-radius: 50%; 
     background: url("../img/palmface.png") no-repeat;
 margin-left: 16%;
@@ -249,4 +249,104 @@ gap: 28px;
     margin: 0;
     padding: 0;
     }
+/*frame2 end*/
+/*feedback*/
+#true-feedback p {
+    
+font-family: 'MarckScript-Regular';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 60px;
+text-align: center;
+margin-bottom: 23px;
+color: #000000;
+}
 
+.customer-text p {
+    font-family: 'Inter-VariableFont_slnt,wght';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+
+color: #000000;
+}
+
+.customer-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.customer-foto {
+    display: flex;
+    justify-content: space-around;
+ 
+        
+  }
+.cat {
+    box-sizing: border-box;
+    position: relative;
+    width: 170px;
+    height: 170px;
+    border: 3px solid #2E3D72;
+    border-radius: 50%; 
+    background: url("../img/cat.png") no-repeat;
+
+}
+.dog {
+    box-sizing: border-box;
+    position: relative;
+    width: 170px;
+    height: 170px;
+    border: 3px solid #2E3D72;
+    border-radius: 50%; 
+    background: url("../img/dog.png") no-repeat;
+
+}
+.mouse {
+    box-sizing: border-box;
+   position: relative;
+    width: 170px;
+    height: 170px;
+    border: 3px solid #2E3D72;
+    border-radius: 50%; 
+    background: url("../img/mouse.png") no-repeat;
+
+}
+
+/*feedback end*/
+/*frame3*/
+.main .frame3 {
+    background-color: #2E3D72;
+    font-style: Pattaya;
+    color: #FFFFFF;
+    font-size: 48px; 
+    }
+
+
+#circle {
+    box-sizing: border-box;
+   position: relative;
+   height: 86px;
+   width: 86px;
+    border: 45px solid #81D742;;
+    border-radius: 50%; 
+    fill: solid #81D742;
+ text-align: center;
+  
+ 
+}
+#circle p {
+    font-size: 48px;
+  color: white;
+  align-self: center;
+
+}
+#container-q {
+    position: relative;
+ align-items: center;
+ display: flex;
+    justify-content: space-between;
+}
