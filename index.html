@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="phpsheet" href="php/feedback-form.php">
         <title>Сайт, на котором ничего</title>
     </head>
     <body>
@@ -27,7 +28,7 @@
                     <h2>
                         который ни к чему<br> не приводит
                     </h2>
-                    <a href="#" class="btn btn-header">Убедиться</a>
+                    <div id="confirm"><a href="#" class="btn btn-header">Убедиться</a></div>
                 </section>
                 <p>
                     *строка для перфекционистов, узревших отсутствие запятой после ‘САЙТ’
@@ -140,11 +141,65 @@
                 </div>
             </section>
             <section class="form">
-                <div class="wrapper"></div>
+                <div class="form-container">
+                    <div class="left-column">
+                        <form action="feedback-form.php" method="POST"> <!--Лучше поместить в папку "php/feedback-form.php" -->
+                            <select name="topic">
+                                <option disabled selected>Чем хотите поделиться?</option>
+                                <option value="1">Поделиться анекдотом</option>
+                                <option value="2">Поделиться зарплатой</option>
+                                <option value="3">Поделиться на ноль</option>  
+                            </select>
+                            <input type="email" name="email" placeholder="Введите Ваш email" maxlength="50" required>
+                            <textarea name="message" placeholder="Введите сообщение" maxlength="150" required></textarea>
+                            <!-- <input type="submit" value="Лети, письмо!"> -->
+                            <div id="fly"><button type="submit" class="btn btn-fly">Лети, письмо!</button></div> <!--Пробуем кнопку-->
+                        </form>
+                    </div> 
+                    <div class="right-column">
+                        <p>Заполните форму и напишите нам!
+                            Разумеется, это будет безрезультатно,<br>
+                        <span class="white">но Вы попробуйте!</span></p>
+                    </div>
+                </div>
+            </section>
+            </div>
             </section>
         </div>
-        <footer class="nh-footer">
-            
+        <div class="nh-footer">
+            <div class="links-container">
+                <div id="first-row">
+                    <ul class="footer-navigation-menu">
+                        <li><a href="#">Немного о нас</a></li>
+                        <li><a href="#">Дневник диплома</a></li>
+                        <li><a href="#">Ссылки</a></li>
+                    </ul>
+                </div>
+                <div id="second-row">
+                    <ul class="footer-navigation-menu">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">404 page</a></li>
+                    </ul>
+                </div>
+                <div id="third-row">
+                    <ul class="footer-navigation-menu">
+                        <li><a href="#">Контакты</a></li>                       
+                    </ul>
+                </div>
+            </div>
+            <div class="end-container">
+                <div>
+                    <p>Здесь должна быть информация об авторском праве, но это слишком серьёзно<br> 
+                        для данного сайта, поэтому просто представьте, что она здесь есть.</p>
+
+                </div>
+                <div>
+                <a href="/" class="logo">
+                    <img src="img/Nothing happens logo - invert.png" alt="Nothing happens логотип">
+                </a>   
+                </div>             
+            </div>    
+        </div>        
         </footer>
     </body>
     </html>
