@@ -1,0 +1,82 @@
+/* general */
+
+@font-face {
+    font-family: Pattaya; 
+    src: url("../fonts/Pattaya-Regular.ttf"); 
+}
+@font-face {
+    font-family: MarckScript-Regular; 
+    src: url("../fonts/MarckScript-Regular.ttf"); 
+}
+@font-face {
+    font-family: Inter-VariableFont_slnt,wght; 
+    src: url("../fonts/Inter-VariableFont_slnt,wght.ttf"); 
+}
+
+/* {
+    margin: 0;
+    padding: 0;
+} */
+h1 {
+    font-size: 44px;
+ 
+    font-family: 'Pattaya';
+    color: #2E3D72;
+    text-shadow: -2px -4px 4px rgba(0, 0, 0, 0.25),
+            1px -2px 2px #ffffff;
+}
+h2 {
+    font-family: 'Inter-VariableFont_slnt,wght';
+font-style: italic;
+font-weight: 700;
+font-size: 34px;
+line-height: 29px;
+color: #FFFFFF;
+
+text-shadow: -2px -4px 4px rgba(0, 0, 0, 0.25),
+            1px -2px 2px #000000;
+}
+h3 {
+    font-family: 'MarckScript-Regular';
+font-size: 30px;
+line-height: 29px;
+color: #2E3D72;
+text-align: center;
+margin: 20px 10px;
+
+text-shadow: -2px -4px 4px rgba(255, 255, 255, 0.25),
+            1px -2px 2px #ffffff;
+}
+.header {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, rgba(255, 255, 255, 0.62) 8.24%, rgba(255, 255, 255, 0.62) 46.82%, #303044 100%);
+
+    backdrop-filter: blur(25px);
+}
+span h3 {
+    font-family: 'MarckScript-Regular';
+font-size: 28px;
+line-height: 29px;
+color: #ffffff;
+text-align: center;
+
+text-shadow: -2px -4px 4px rgba(0, 0, 0, 0.25),
+            1px -2px 2px #000000;
+}
+
+span p, span a, span img {
+    display: flex;
+ align-items: flex-start;
+ margin-left: 3px;
+ gap: 5px;
+ font-family: 'Inter-VariableFont_slnt,wght';
+ font-style: italic;
+font-size: 22px;
+text-decoration: none;
+color: #2E3D72;
+font-weight: bold;
+
+}
+.container {
+    
+margin-left: 15px;
+}

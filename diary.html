@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles-main.css">
+    <title>Дневник диплома</title>
+</head>
+<body>
+    <table align="center" style="width:70%; border-radius: 15px;" rules="rows" cellpadding="10px">
+       <tr>
+          <td>
+            <table class="header" style="width:100%; border-radius: 15px;">
+            <tr>
+              <th>
+                <h1>САЙТ, который ни к чему не приводит</h1>
+                  <h2>Дневник диплома</h2>
+              </th>
+            </tr>
+            </table>            
+            <table align="center" style="width:100%; border-radius: 15px;" bgcolor=#E9E9E9>
+                <td>
+                    <td rowspan="2" style="width:80%">            
+                        <div class="container">
+                        <h3>Здесь я расскажу о моих трудностях в ходе проекта и способах их решения</h3>
+                            <ol>
+                                <li>Текст внутри кнопки – как сделать обводку текста и тень для него (stroke + effects)?
+                                <p><b>Решение:</b> никак. Простого способа в одну строку не нашлось, только поиграться с тенями у текста – задать две тени одновременно.
+                                </p></li>
+                                <li>Как уменьшить header по высоте?
+                                <p><b>Решение:</b> скорее всего в заглавных контейнерах удалить margin-bottom и подобное
+                                </li>
+                                <li>Как склеить между собой галочку и текст?
+                                <p><b>Решение:</b> создавать в HTML пустые блоки figure, там же дивы с текстом. В CSS делать их флексами, ровнять в строку и задавать отступы. 
+                                </li>
+                                <li>Терминал для гита показывает странные файлы, которых нет.
+                                    <p><b>Решение:</b> иногда нужно просто подождать (пару минут), потом перезайти в VSC и заново в терминале инит, статус, и тд.
+                                    </li>
+                                <li><mark>Как расположить конкретный элемент именно по центру сайта или контейнера?
+                                </mark><p><mark><b>Решение:</b></mark>
+                                    </li>
+                                <li>Зависал GIT – терминал выдавал много разных файлов и зависал, пытаясь их добавить.
+                                    <p><b>Решение:</b> открывать в VSC папку с проектом и только потом терминал, смотрим статус и прочее.
+                                    </li>
+                                <li>JS код не срабатывал при нажатии на кнопку, хотя код написан верно.
+                                    <p><b>Решение:</b> путь в HTML к файлу скрипта надо прописывать непосредственно рядом с кнопкой.
+                                    </li>
+                                <li>Не прогружались картинки.
+                                    <p><b>Решение:</b> очистка КЭШа в браузере (настройки – история – история – очистить историю – будут опции по очистке)
+                                    </li>
+                                <li>Выравнивания..
+                                    <p><b>Решение:</b> оказывается, “margin: 0 0 0 0” или “margin: 0” – это не одно и то же, что “margin-left: 0”.
+                                    </li>
+                                <li><mark>Картинка вставлена фоном в css в одном из контейнеров (background-image: url("../img/top foto.png");). Как сделать размытыми границы картинки? Толщину границ?
+                                </mark><p><mark><b>Решение:</b></mark>
+                                    </li>  
+                            </ol>
+                            </div>
+                    </td>                    
+                </td>                
+            <tr> 
+                <td <td rowspan="2" bgcolor="#999999"  style="border-radius: 15px"; align="center" cellpadding="10px">
+                    <h3>Меню сайта</h3>
+                    <span>
+                    <p><a href="main.html">
+                        <img src="img/check.ico" height="20px" width="20px" alt="Зелёная галочка">
+                        Главная
+                        </a>
+                     </p>
+                    <p><a href="aboutus.html">
+                       <img src="img/check.ico" height="20px" width="20px" alt="Зелёная галочка">
+                       Немного о нас
+                       </a>
+                    </p>
+                    <p><a href="diary.html">
+                        <img src="img/check.ico" height="20px" width="20px" alt="Зелёная галочка">
+                        Дневник диплома
+                        </a>
+                    </p>
+                    <p><a href="links.html">
+                        <img src="img/check.ico" height="20px" width="20px" alt="Зелёная галочка">
+                        Ссылки
+                        </a>
+                    </p>                     
+                    <p><a href="404.html">
+                         <img src="img/check.ico" height="20px" width="20px" alt="Зелёная галочка">
+                         404 page
+                         </a>
+                    </p>
+                    <p><a href="contacts.html">
+                         <img src="img/check.ico" height="20px" width="20px" alt="Зелёная галочка">
+                         Контакты
+                         </a>
+                    </p>
+                    <p><a href="index.html">
+                        <img src="img/check.ico" height="20px" width="20px" alt="Зелёная галочка">
+                        Лендинг
+                        </a>
+                    </p>                 
+                    </span> 
+                    <tr>    
+                        <td bgcolor="#BCBCBC" style="border-radius: 15px"; align="center" cellpadding="10px">
+                        <h3>Здесь могла бы быть Ваша реклама</h3>                        
+                        </td>
+                        </tr>                                 
+                </td>
+            </tr>            
+                </table>              
+            <table bgcolor="#2E3D72" height="100" cellpadding="10px" style="width:100%; border-radius: 15px;">
+                <tr>
+                    <th>                        
+                        <img src="img/mice.gif" alt="Мыши в подвале">                        
+                    </th>
+                </tr>                
+            </table>
+            </td>
+        </tr>    
+    </table>    
+</body>
+</html>

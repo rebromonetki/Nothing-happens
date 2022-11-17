@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles-404.css">
+    <title>404 page</title>
+</head>
+<body>
+    <script>
+        alert("ПРЕДУПРЕЖДЕНИЕ!!! Нажимая кнопку OK - Вы подтверждаете своё намерение убедиться в том, что сайт ни к чему не приведёт.")
+    </script>
+    <script src="/js/confirm-404.js"></script> <!--всплывающее окно при переходе на 404 в самом начале-->
+    <div class="container">
+        <div class="container1">
+        <div><button data-type="symbol">Попытка номер раз</button>
+        <script src="/js/confirm-404.js"></script>
+        </div> <!--разлёт частиц-->
+        <div><button id="submit">Попытка номер два</button>
+        <script src="/js/confirm-404.js"></script>
+        </div>
+        </div> <!--смена текста-->
+        <div class="container2">
+        <div><a href="#openModal">Попытка номер три</a></div>  <!--модальное окно-->
+        </div>        
+    </div>
+        <div id="image">
+            <div><a href="main.html" class="logo"> 
+            </p>
+               <img src="img/duck.ico" alt="Тёмная уточка">    
+            </a></div>
+        </div>
+       <div id="openModal" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Подсказка</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">    
+              <p>Что же ты скрываешь, сидя одиноко на ветке, чёрная уточка?..</p>
+            </div>
+          </div>
+        </div>
+      </div>      
+</body>
+</html>
